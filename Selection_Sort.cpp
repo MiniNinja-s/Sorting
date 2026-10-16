@@ -27,7 +27,8 @@ vector<int> Selection_Sort(vector<int> arr) {
 
 int main() {
     vector<int> arr = {-18, 0, 7, -10, 6};
-    for(int& res : Selection_Sort(arr)) {
+    arr = Selection_Sort(arr);
+    for(int& res : arr) {
         cout << res << ' ';
     }
 }
